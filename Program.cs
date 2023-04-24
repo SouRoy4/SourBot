@@ -8,6 +8,7 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
 
 namespace SourBot
 {
@@ -34,7 +35,7 @@ namespace SourBot
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string token = "MTA5NTgyNjM2ODM1ODUzMTIyNA.GRcVz_.o0kdun76w7DDgnZKTH4_OLLyUF7RQt8R6QxRCU";
+            string token = File.ReadAllText("bot_token.txt");
 
             _client.Log += _client_Log;
 
