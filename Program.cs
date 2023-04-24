@@ -34,7 +34,7 @@ namespace SourBot
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string token = "MTA5NTgyNjM2ODM1ODUzMTIyNA.Gp9hve.gJVj5rrtjOdDYbBTjO-R2zWSY1f1tcisSZKMiI";
+            string token = "MTA5NTgyNjM2ODM1ODUzMTIyNA.GRcVz_.o0kdun76w7DDgnZKTH4_OLLyUF7RQt8R6QxRCU";
 
             _client.Log += _client_Log;
 
